@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.brand}>
-        <Image src={logoCrest} alt="Lusso Print" width={52} height={52} className={styles.logo} priority />
+        <Image src={logoCrest} alt="Lusso Print" width={80} height={80} className={styles.logo} priority />
         <span className={styles.wordmark}>LussoPrint</span>
       </Link>
 

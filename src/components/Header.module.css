@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 6vw;
+  padding: 12px 6vw;
   gap: 24px;
   background: var(--bg);
   transition: background-color 0.2s ease;
@@ -24,13 +24,15 @@
 }
 
 .logo {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
 .wordmark {
   font-family: var(--font-eastside), cursive;
   font-weight: 400;
-  font-size: 42px;
+  font-size: 64px;
   letter-spacing: 0.01em;
   color: var(--text);
 }
@@ -95,11 +97,16 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: 16px 6vw;
+    padding: 10px 6vw;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
   }
 
   .wordmark {
-    font-size: 35px;
+    font-size: 48px;
   }
 
   .actions {
@@ -148,7 +155,26 @@
     color: var(--accent-hover);
   }
 
-  .mobileNavOpen {
+  .mobileNav.mobileNavOpen {
     max-height: 320px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .logo {
+    width: 46px;
+    height: 46px;
+  }
+
+  .wordmark {
+    font-size: 32px;
   }
 }
