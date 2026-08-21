@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -65,9 +66,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             })();
           `}
         </Script>
+        <Script id="cookie-consent-init" strategy="beforeInteractive">
+          {`
+            (function () {
+              var saved = localStorage.getItem('cookie-consent');
+              if (saved === 'accepted' || saved === 'necessary-only') {
+                document.documentElement.setAttribute('data-cookie-consent', saved);
+              }
+            })();
+          `}
+        </Script>
         <Header />
         {children}
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );

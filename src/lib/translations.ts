@@ -75,6 +75,12 @@ export const translations = {
       rights: "Toate drepturile rezervate.",
       developedBy: "Dezvoltat de",
     },
+    cookieConsent: {
+      text: "Folosim cookie-uri strict necesare pentru funcționarea site-ului și, cu acordul tău, cookie-uri de analiză pentru a-l îmbunătăți.",
+      linkLabel: "Politica de cookie-uri",
+      acceptAll: "Accept toate",
+      necessaryOnly: "Doar cele necesare",
+    },
   },
   en: {
     nav: {
@@ -149,6 +155,12 @@ export const translations = {
       anpcHeading: "ANPC",
       rights: "All rights reserved.",
       developedBy: "Developed by",
+    },
+    cookieConsent: {
+      text: "We use strictly necessary cookies for the site to function and, with your consent, analytics cookies to improve it.",
+      linkLabel: "Cookie Policy",
+      acceptAll: "Accept all",
+      necessaryOnly: "Necessary only",
     },
   },
 } satisfies Record<Language, unknown>;
