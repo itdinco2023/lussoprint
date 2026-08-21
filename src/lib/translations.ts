@@ -111,6 +111,41 @@ export const translations = {
         },
       ],
     },
+    faq: {
+      kicker: "Întrebări frecvente",
+      items: [
+        {
+          question: "Aveți cantitate minimă?",
+          answer: "La unele produse, vă rugăm să ne contactați pentru mai multe detalii.",
+        },
+        {
+          question: "Pot trimite propria grafică?",
+          answer:
+            "Da, cu mențiunea că imaginile generate cu AI au o dimensiune nepotrivită pentru printul de mari dimensiuni.",
+        },
+        {
+          question: "Mă puteți ajuta cu designul?",
+          answer:
+            "Cu siguranță, vă stăm la dispoziție pentru consultanță pe întreaga perioadă a derulării proiectului, mai mult decât atât, pentru proiectele mai puțin complexe, serviciile de grafică sunt complet gratuite!",
+        },
+        {
+          question: "Cât durează producția?",
+          answer: "Depinde de complexitatea proiectului și tiraj.",
+        },
+        {
+          question: "Livrați în afara orașului?",
+          answer: "Livrăm oriunde!",
+        },
+        {
+          question: "Pot solicita o mostră?",
+          answer: "Depinde de produs, putem face ușor o carte de vizită, un banner mai greu!",
+        },
+        {
+          question: "Ce formate de fișiere acceptați?",
+          answer: "Toate, mai puțin .exe!",
+        },
+      ],
+    },
     contact: {
       kicker: "Contact",
       hours: "Luni – Vineri, 08:00–17:00",
@@ -272,6 +307,41 @@ export const translations = {
         {
           title: "Digital Printing",
           description: "Brochures, flyers, posters, and business cards — consistent quality at any print run",
+        },
+      ],
+    },
+    faq: {
+      kicker: "Frequently Asked Questions",
+      items: [
+        {
+          question: "Do you have a minimum quantity?",
+          answer: "For some products, please contact us for more details.",
+        },
+        {
+          question: "Can I send my own artwork?",
+          answer:
+            "Yes, keep in mind that AI-generated images have an unsuitable resolution for large-format printing.",
+        },
+        {
+          question: "Can you help me with the design?",
+          answer:
+            "Absolutely — we're available for consultation throughout the project, and for less complex projects, our design services are completely free!",
+        },
+        {
+          question: "How long does production take?",
+          answer: "It depends on the complexity of the project and the print run.",
+        },
+        {
+          question: "Do you deliver outside the city?",
+          answer: "We deliver anywhere!",
+        },
+        {
+          question: "Can I request a sample?",
+          answer: "It depends on the product — a business card is easy, a banner is trickier!",
+        },
+        {
+          question: "What file formats do you accept?",
+          answer: "All of them, except .exe!",
         },
       ],
     },
