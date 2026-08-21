@@ -5,6 +5,7 @@ import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import QuoteModal from "@/components/QuoteModal";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {children}
         <Footer />
         <CookieConsent />
+        <QuoteModal />
       </body>
     </html>
   );

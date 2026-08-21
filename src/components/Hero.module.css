@@ -63,10 +63,12 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   padding: 17px 44px;
+  cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .buttonSolid {
+  border: none;
   background: var(--color-gold-600);
   color: var(--color-ink-900);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
