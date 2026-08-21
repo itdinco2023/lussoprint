@@ -26,6 +26,29 @@ export const translations = {
         "În zona de print digital, urmărim un standard constant de calitate, indiferent de tiraj: broșuri, flyere, postere și cărți de vizită executate la un nivel care reflectă cu exactitate viziunea inițială a fiecărui client.",
         "Investim continuu în echipamente moderne și finisaje de precizie, pentru ca rezultatul final să corespundă întotdeauna așteptărilor stabilite încă din etapa de concept.",
       ],
+      whyTitle: "De ce Lusso Print?",
+      whyItems: [
+        {
+          title: "Calitate premium",
+          description: "Materiale și finisaje atent selecționate.",
+        },
+        {
+          title: "Producție personalizată",
+          description: "Adaptăm fiecare proiect nevoilor tale.",
+        },
+        {
+          title: "Un singur furnizor",
+          description: "De la print la branding și personalizare.",
+        },
+        {
+          title: "Execuție rapidă",
+          description: "Termene clare și comunicare directă.",
+        },
+        {
+          title: "Atenție la detalii",
+          description: "Pregătire grafică și producție controlată.",
+        },
+      ],
     },
     servicii: {
       kicker: "Servicii",
@@ -134,6 +157,29 @@ export const translations = {
         "We round out our offer with custom merchandise and apparel — t-shirts, workwear, caps, pens, bags, and notebooks — designed to consistently support your brand identity in any context.",
         "In digital printing, we maintain a consistent quality standard regardless of print run: brochures, flyers, posters, and business cards executed to a level that accurately reflects each client's original vision.",
         "We continuously invest in modern equipment and precision finishing, so the final result always matches the expectations set from the concept stage.",
+      ],
+      whyTitle: "Why Lusso Print?",
+      whyItems: [
+        {
+          title: "Premium quality",
+          description: "Carefully selected materials and finishes.",
+        },
+        {
+          title: "Custom production",
+          description: "We tailor every project to your needs.",
+        },
+        {
+          title: "A single supplier",
+          description: "From print to branding and personalization.",
+        },
+        {
+          title: "Fast turnaround",
+          description: "Clear deadlines and direct communication.",
+        },
+        {
+          title: "Attention to detail",
+          description: "Careful prepress and controlled production.",
+        },
       ],
     },
     servicii: {
