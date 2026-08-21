@@ -25,6 +25,14 @@ const eastside = localFont({
   weight: "400",
 });
 
+const cinzel = localFont({
+  src: [
+    { path: "../../public/fonts/CinzelRegular.ttf", weight: "400" },
+    { path: "../../public/fonts/CinzelBold.ttf", weight: "700" },
+  ],
+  variable: "--font-cinzel",
+});
+
 export const metadata: Metadata = {
   title: "Lusso Print — Print de excepție pentru branduri care nu fac compromisuri",
   description:
@@ -35,7 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="ro"
-      className={`${playfair.variable} ${cormorant.variable} ${eastside.variable}`}
+      className={`${playfair.variable} ${cormorant.variable} ${eastside.variable} ${cinzel.variable}`}
       suppressHydrationWarning
     >
       <body>
