@@ -45,7 +45,8 @@
 
 .title {
   font-family: var(--font-playfair), serif;
-  font-size: 21px;
+  font-size: 26px;
+  font-weight: 700;
   color: var(--ink);
 }
 

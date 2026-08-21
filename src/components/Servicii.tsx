@@ -11,33 +11,33 @@ const romanNumerals = ["I", "II", "III", "IV", "V", "VI"];
 
 const servicii: { title: string; description: string; image: StaticImageData }[] = [
   {
-    title: "Print digital",
-    description: "Tiraje mici, calitate constantă",
+    title: "Publicitate outdoor",
+    description: "Bannere, colantări pentru vitrine, geamuri și autovehicule profesionale",
     image: printDigital,
   },
   {
-    title: "Print offset",
-    description: "Tiraje mari, cost optimizat",
+    title: "Sisteme de expunere",
+    description: "Steaguri de eveniment, structuri pop-up și roll-up",
     image: printOffset,
   },
   {
-    title: "Materiale publicitare",
-    description: "Bannere, roll-up, panouri",
+    title: "Casete luminoase",
+    description: "Interior și exterior, în variante textil sau plexi",
     image: materialePublicitare,
   },
   {
-    title: "Cărți de vizită & papetărie",
-    description: "Hârtii premium, finisaje fine",
+    title: "Etichete și stickere",
+    description: "Soluții personalizate pentru companii și antreprenori",
     image: cartiVizita,
   },
   {
-    title: "Ambalaje personalizate",
-    description: "Cutii, pungi, etichete",
+    title: "Obiecte și textile personalizate",
+    description: "Tricouri, echipamente de lucru, șepci, pixuri, sacoșe, agende",
     image: ambalaje,
   },
   {
-    title: "Print pe textile",
-    description: "Tricouri, materiale promoționale",
+    title: "Print digital",
+    description: "Broșuri, flyere, postere și cărți de vizită, calitate constantă indiferent de tiraj",
     image: printTextile,
   },
 ];
