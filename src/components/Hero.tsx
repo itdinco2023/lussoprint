@@ -17,7 +17,7 @@ export default function Hero() {
       <div className={styles.overlayGradient} />
       <div className={styles.content}>
         <p className={styles.tagline}>
-          Print de excepție pentru branduri care nu fac compromisuri.
+          Servicii de excepție pentru branduri care nu fac compromisuri.
         </p>
         <div className={styles.buttons}>
           <a href="#contact" className={styles.buttonSolid}>
