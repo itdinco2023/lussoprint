@@ -6,3 +6,10 @@
   font-size: 14px;
   font-family: var(--font-cormorant), serif;
 }
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+}

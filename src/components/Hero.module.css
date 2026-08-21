@@ -108,3 +108,45 @@
   border-color: var(--gold);
   color: var(--gold);
 }
+
+@media (max-width: 768px) {
+  .plate {
+    padding: 32px 28px;
+    gap: 16px;
+  }
+
+  .rule {
+    height: 24px;
+  }
+
+  .buttons {
+    gap: 12px;
+  }
+
+  .buttonSolid,
+  .buttonOutline {
+    padding: 15px 30px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    gap: 20px;
+  }
+
+  .plate {
+    padding: 26px 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttonSolid,
+  .buttonOutline {
+    text-align: center;
+  }
+}

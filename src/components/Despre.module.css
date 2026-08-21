@@ -11,3 +11,13 @@
   line-height: 1.6;
   color: var(--muted-brown-dark);
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 7vw;
+  }
+
+  .text {
+    font-size: 19px;
+  }
+}

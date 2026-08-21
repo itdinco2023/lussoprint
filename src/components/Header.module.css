@@ -1,17 +1,18 @@
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 8vw;
+  padding: 18px 6vw;
   gap: 24px;
-  flex-wrap: wrap;
-  background: transparent;
+  background: var(--cream);
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+  z-index: 2;
 }
 
 .logo {
@@ -21,7 +22,7 @@
 .wordmark {
   font-family: var(--font-playfair), serif;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 22px;
   letter-spacing: 0.01em;
   color: var(--ink);
 }
@@ -35,8 +36,101 @@
 .nav a {
   color: var(--burgundy);
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav a:hover {
   color: var(--gold);
+}
+
+.menuButton {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bar {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--burgundy);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.barOpenTop {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.barOpenMid {
+  opacity: 0;
+}
+
+.barOpenBottom {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.mobileNav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 6vw;
+  }
+
+  .wordmark {
+    font-size: 19px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .mobileNav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--cream);
+    border-top: 1px solid var(--gold-pale);
+    box-shadow: 0 12px 24px rgba(36, 10, 10, 0.12);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+    z-index: 1;
+  }
+
+  .mobileNav a {
+    padding: 16px 6vw;
+    font-size: 18px;
+    color: var(--burgundy);
+    border-bottom: 1px solid var(--gold-pale);
+  }
+
+  .mobileNav a:last-child {
+    border-bottom: none;
+  }
+
+  .mobileNav a:hover {
+    color: var(--gold);
+  }
+
+  .mobileNavOpen {
+    max-height: 320px;
+  }
 }

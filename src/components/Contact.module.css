@@ -41,3 +41,17 @@
   background: var(--gold);
   color: var(--burgundy-deep);
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 7vw;
+  }
+
+  .line {
+    font-size: 19px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

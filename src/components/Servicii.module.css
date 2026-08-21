@@ -55,13 +55,27 @@
 }
 
 @media (max-width: 900px) {
+  .section {
+    padding: 80px 7vw;
+  }
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
   }
 }
 
 @media (max-width: 600px) {
+  .section {
+    padding: 56px 7vw;
+  }
+
+  .kicker {
+    margin-bottom: 40px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
