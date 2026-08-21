@@ -13,15 +13,12 @@ export default function Hero() {
         priority
         sizes="100vw"
       />
-      <div className={styles.overlay} />
+      <div className={styles.overlayFlat} />
+      <div className={styles.overlayGradient} />
       <div className={styles.content}>
-        <div className={styles.plate}>
-          <div className={styles.rule} />
-          <p className={styles.tagline}>
-            Print de excepție pentru branduri care nu fac compromisuri.
-          </p>
-          <div className={`${styles.rule} ${styles.ruleBottom}`} />
-        </div>
+        <p className={styles.tagline}>
+          Print de excepție pentru branduri care nu fac compromisuri.
+        </p>
         <div className={styles.buttons}>
           <a href="#contact" className={styles.buttonSolid}>
             Solicită ofertă
