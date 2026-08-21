@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Cormorant_Garamond } from "next/font/google";
+import localFont from "next/font/local";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -17,6 +18,12 @@ const cormorant = Cormorant_Garamond({
   style: ["normal", "italic"],
 });
 
+const eastside = localFont({
+  src: "../../public/fonts/EastSideRegular.ttf",
+  variable: "--font-eastside",
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: "Lusso Print — Print de excepție pentru branduri care nu fac compromisuri",
   description:
@@ -25,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="ro" className={`${playfair.variable} ${cormorant.variable}`}>
+    <html lang="ro" className={`${playfair.variable} ${cormorant.variable} ${eastside.variable}`}>
       <body>
         <Header />
         {children}

@@ -14,7 +14,7 @@ export default function Header() {
     <header className={styles.header}>
       <Link href="/" className={styles.brand}>
         <Image src={logoCrest} alt="Lusso Print" width={52} height={52} className={styles.logo} priority />
-        <span className={styles.wordmark}>LUSSO PRINT</span>
+        <span className={styles.wordmark}>LussoPrint</span>
       </Link>
 
       <nav className={styles.nav}>
