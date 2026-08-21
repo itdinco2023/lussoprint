@@ -10,6 +10,9 @@
   font-size: 23px;
   line-height: 1.6;
   color: var(--muted-brown-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 @media (max-width: 768px) {
