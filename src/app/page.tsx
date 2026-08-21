@@ -13,9 +13,9 @@ export default function Home() {
       <Divider />
       <Despre />
       <Divider />
-      <CumLucram />
-      <Divider />
       <Servicii />
+      <Divider />
+      <CumLucram />
       <Divider />
       <Faq />
       <Contact />

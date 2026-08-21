@@ -1,8 +1,8 @@
 export const siteLinks = [
   { href: "/", key: "home" as const },
   { href: "/despre", key: "about" as const },
-  { href: "/cum-lucram", key: "howWeWork" as const },
   { href: "/servicii", key: "services" as const },
+  { href: "/cum-lucram", key: "howWeWork" as const },
   { href: "/contact", key: "contact" as const },
 ];
 
