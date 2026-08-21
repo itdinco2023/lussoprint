@@ -7,6 +7,7 @@
   --color-ivory-50: #f8f3e7;
   --color-ink-900: #241014;
   --color-ink-700: #4a2a30;
+  --color-noir-950: #140a0c; /* footer: aproape negru, fix în ambele teme */
 
   /* --- token-uri semantice, folosite în componente --- */
   --bg: var(--color-ivory-50);
