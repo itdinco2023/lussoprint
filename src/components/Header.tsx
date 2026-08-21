@@ -2,14 +2,15 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./Header.module.css";
 import logoCrest from "../../public/images/logo-crest.png";
 
 const links = [
-  { href: "#", label: "Prima pagină" },
-  { href: "#despre", label: "Despre noi" },
-  { href: "#servicii", label: "Servicii" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Prima pagină" },
+  { href: "/despre", label: "Despre noi" },
+  { href: "/servicii", label: "Servicii" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -17,16 +18,16 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.brand}>
+      <Link href="/" className={styles.brand}>
         <Image src={logoCrest} alt="Lusso Print" width={52} height={52} className={styles.logo} priority />
         <span className={styles.wordmark}>LUSSO PRINT</span>
-      </div>
+      </Link>
 
       <nav className={styles.nav}>
         {links.map((link) => (
-          <a key={link.label} href={link.href}>
+          <Link key={link.label} href={link.href}>
             {link.label}
-          </a>
+          </Link>
         ))}
       </nav>
 
@@ -48,9 +49,9 @@ export default function Header() {
         className={`${styles.mobileNav} ${open ? styles.mobileNavOpen : ""}`}
       >
         {links.map((link) => (
-          <a key={link.label} href={link.href} onClick={() => setOpen(false)}>
+          <Link key={link.label} href={link.href} onClick={() => setOpen(false)}>
             {link.label}
-          </a>
+          </Link>
         ))}
       </nav>
     </header>

@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 520px;
+  margin: 48px auto 0;
+  text-align: left;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-family: var(--font-playfair), serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+
+.field input,
+.field textarea {
+  font-family: var(--font-cormorant), serif;
+  font-size: 18px;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--gold-pale);
+  padding: 12px 16px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.submit {
+  align-self: center;
+  margin-top: 8px;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--burgundy);
+  padding: 16px 48px;
+  font-family: var(--font-playfair), serif;
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.submit:hover:not(:disabled) {
+  background: var(--gold);
+  color: var(--burgundy-deep);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success {
+  text-align: center;
+  color: var(--burgundy);
+  font-size: 17px;
+}
+
+.error {
+  text-align: center;
+  color: #a12f2f;
+  font-size: 17px;
+}
+
+@media (max-width: 480px) {
+  .form {
+    margin-top: 36px;
+  }
+
+  .submit {
+    width: 100%;
+  }
+}
