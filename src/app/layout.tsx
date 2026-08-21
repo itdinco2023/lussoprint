@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Cormorant_Garamond } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -32,8 +33,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="ro" className={`${playfair.variable} ${cormorant.variable} ${eastside.variable}`}>
+    <html
+      lang="ro"
+      className={`${playfair.variable} ${cormorant.variable} ${eastside.variable}`}
+      suppressHydrationWarning
+    >
       <body>
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`
+            (function () {
+              var saved = localStorage.getItem('theme');
+              var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+              document.documentElement.setAttribute('data-theme', theme);
+            })();
+          `}
+        </Script>
         <Header />
         {children}
         <Footer />

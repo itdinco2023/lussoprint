@@ -5,13 +5,21 @@
   justify-content: space-between;
   padding: 18px 6vw;
   gap: 24px;
-  background: var(--color-ivory-50);
+  background: var(--bg);
+  transition: background-color 0.2s ease;
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
+  z-index: 2;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   z-index: 2;
 }
 
@@ -24,7 +32,7 @@
   font-weight: 400;
   font-size: 42px;
   letter-spacing: 0.01em;
-  color: var(--color-ink-900);
+  color: var(--text);
 }
 
 .nav {
@@ -34,13 +42,13 @@
 }
 
 .nav a {
-  color: var(--color-burgundy-900);
+  color: var(--accent);
   transition: color 0.2s ease;
   white-space: nowrap;
 }
 
 .nav a:hover {
-  color: var(--color-burgundy-700);
+  color: var(--accent-hover);
 }
 
 .menuButton {
@@ -62,7 +70,7 @@
   display: block;
   width: 24px;
   height: 1px;
-  background: var(--color-burgundy-900);
+  background: var(--accent);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -106,8 +114,8 @@
     right: 0;
     display: flex;
     flex-direction: column;
-    background: var(--color-ivory-50);
-    border-top: 1px solid var(--color-gold-300);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
     box-shadow: 0 12px 24px rgba(36, 10, 10, 0.12);
     max-height: 0;
     overflow: hidden;
@@ -118,8 +126,8 @@
   .mobileNav a {
     padding: 16px 6vw;
     font-size: 18px;
-    color: var(--color-burgundy-900);
-    border-bottom: 1px solid var(--color-gold-300);
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
   }
 
   .mobileNav a:last-child {
@@ -127,7 +135,7 @@
   }
 
   .mobileNav a:hover {
-    color: var(--color-burgundy-700);
+    color: var(--accent-hover);
   }
 
   .mobileNavOpen {

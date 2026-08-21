@@ -1,11 +1,36 @@
 :root {
-  --color-burgundy-900: #5c0f1f; /* principal: header, footer, titluri, butoane */
-  --color-burgundy-700: #7c1b34; /* secundar: hover, linkuri */
-  --color-gold-600: #c9a227; /* accent: CTA, borduri, iconițe — folosit punctual */
-  --color-gold-300: #e9d999; /* auriu deschis: highlight-uri fine */
-  --color-ivory-50: #f8f3e7; /* fundal principal */
-  --color-ink-900: #241014; /* text principal */
-  --color-ink-700: #4a2a30; /* text secundar */
+  /* --- paleta de bază, fixă --- */
+  --color-burgundy-900: #5c0f1f;
+  --color-burgundy-700: #7c1b34;
+  --color-gold-600: #c9a227;
+  --color-gold-300: #e9d999;
+  --color-ivory-50: #f8f3e7;
+  --color-ink-900: #241014;
+  --color-ink-700: #4a2a30;
+
+  /* --- token-uri semantice, folosite în componente --- */
+  --bg: var(--color-ivory-50);
+  --surface: #ffffff;
+  --text: var(--color-ink-900);
+  --text-muted: var(--color-ink-700);
+  --accent: var(--color-burgundy-900);
+  --accent-hover: var(--color-burgundy-700);
+  --cta-bg: var(--color-gold-600);
+  --cta-text: var(--color-ink-900);
+  --border: rgba(36, 16, 20, 0.12);
+}
+
+/* varianta dark, activată explicit prin atributul data-theme */
+:root[data-theme="dark"] {
+  --bg: #1c0e12;
+  --surface: #2a161b;
+  --text: #f3ead8;
+  --text-muted: #d8c6b4;
+  --accent: #e2b85e;
+  --accent-hover: #c88f3a;
+  --cta-bg: #e2b85e;
+  --cta-text: #241014;
+  --border: rgba(243, 234, 216, 0.14);
 }
 
 html {
@@ -20,11 +45,12 @@ body {
 
 body {
   min-height: 100%;
-  color: var(--color-ink-900);
-  background: var(--color-ivory-50);
+  color: var(--text);
+  background: var(--bg);
   font-family: var(--font-cormorant), serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 * {
@@ -39,6 +65,6 @@ a {
 }
 
 ::selection {
-  background: var(--color-gold-600);
-  color: var(--color-ivory-50);
+  background: var(--cta-bg);
+  color: var(--cta-text);
 }
