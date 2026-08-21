@@ -1,6 +1,6 @@
 .footer {
-  background: var(--burgundy-deep);
-  color: var(--gold-pale);
+  background: var(--color-burgundy-900);
+  color: var(--color-ivory-50);
   font-family: var(--font-cormorant), serif;
 }
 
@@ -35,26 +35,26 @@
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.01em;
-  color: var(--cream);
+  color: var(--color-ivory-50);
 }
 
 .address {
   font-style: normal;
   font-size: 15px;
   line-height: 1.7;
-  color: var(--gold-pale);
+  color: var(--color-ivory-50);
   opacity: 0.9;
 }
 
 .contactLine {
   font-size: 15px;
-  color: var(--gold-pale);
+  color: var(--color-ivory-50);
   transition: color 0.2s ease;
   width: fit-content;
 }
 
 .contactLine:hover {
-  color: var(--gold);
+  color: var(--color-gold-300);
 }
 
 .heading {
@@ -62,7 +62,7 @@
   font-size: 13px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--color-gold-300);
   margin-bottom: 4px;
 }
 
@@ -74,13 +74,13 @@
 
 .linkList a {
   font-size: 15px;
-  color: var(--gold-pale);
+  color: var(--color-ivory-50);
   transition: color 0.2s ease;
   width: fit-content;
 }
 
 .linkList a:hover {
-  color: var(--gold);
+  color: var(--color-gold-300);
 }
 
 .anpcBadges {
@@ -101,21 +101,21 @@
 }
 
 .bottomBar {
-  border-top: 1px solid rgba(232, 217, 176, 0.2);
+  border-top: 1px solid rgba(233, 217, 153, 0.2);
   padding: 20px 8vw;
   text-align: center;
   font-size: 13px;
-  color: var(--gold-pale);
+  color: var(--color-ivory-50);
   opacity: 0.85;
 }
 
 .bottomBar a {
-  color: var(--gold);
+  color: var(--color-gold-300);
   transition: color 0.2s ease;
 }
 
 .bottomBar a:hover {
-  color: var(--cream);
+  color: var(--color-ivory-50);
 }
 
 @media (max-width: 900px) {

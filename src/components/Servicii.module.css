@@ -8,7 +8,7 @@
   font-size: 15px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--color-burgundy-900);
   margin-bottom: 56px;
 }
 
@@ -38,7 +38,7 @@
 
 .numeral {
   font-family: var(--font-playfair), serif;
-  color: var(--gold);
+  color: var(--color-gold-600);
   font-size: 18px;
   margin-right: 8px;
 }
@@ -47,12 +47,12 @@
   font-family: var(--font-playfair), serif;
   font-size: 26px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--color-ink-900);
 }
 
 .description {
   font-size: 16px;
-  color: var(--muted-brown);
+  color: var(--color-ink-700);
 }
 
 @media (max-width: 900px) {

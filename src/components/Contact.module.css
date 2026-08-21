@@ -12,7 +12,7 @@
   font-size: 15px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--color-burgundy-900);
   margin-bottom: 16px;
 }
 
@@ -22,13 +22,13 @@
 
 .hours {
   font-size: 17px;
-  color: var(--muted-brown);
+  color: var(--color-ink-700);
 }
 
 .button {
   margin-top: 24px;
-  border: 1px solid var(--gold);
-  color: var(--burgundy);
+  border: 1px solid var(--color-gold-600);
+  color: var(--color-burgundy-900);
   padding: 16px 40px;
   font-family: var(--font-playfair), serif;
   font-size: 15px;
@@ -38,8 +38,8 @@
 }
 
 .button:hover {
-  background: var(--gold);
-  color: var(--burgundy-deep);
+  background: var(--color-gold-600);
+  color: var(--color-ink-900);
 }
 
 @media (max-width: 768px) {

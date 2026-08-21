@@ -1,12 +1,11 @@
 :root {
-  --burgundy: #6b0f1a;
-  --burgundy-deep: #3d0810;
-  --ink: #241b14;
-  --gold: #c6a15b;
-  --gold-pale: #e8d9b0;
-  --cream: #faf6ee;
-  --muted-brown: #6b5c4a;
-  --muted-brown-dark: #3a2c20;
+  --color-burgundy-900: #5c0f1f; /* principal: header, footer, titluri, butoane */
+  --color-burgundy-700: #7c1b34; /* secundar: hover, linkuri */
+  --color-gold-600: #c9a227; /* accent: CTA, borduri, iconițe — folosit punctual */
+  --color-gold-300: #e9d999; /* auriu deschis: highlight-uri fine */
+  --color-ivory-50: #f8f3e7; /* fundal principal */
+  --color-ink-900: #241014; /* text principal */
+  --color-ink-700: #4a2a30; /* text secundar */
 }
 
 html {
@@ -21,8 +20,8 @@ body {
 
 body {
   min-height: 100%;
-  color: var(--ink);
-  background: var(--cream);
+  color: var(--color-ink-900);
+  background: var(--color-ivory-50);
   font-family: var(--font-cormorant), serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,6 +39,6 @@ a {
 }
 
 ::selection {
-  background: var(--gold);
-  color: var(--cream);
+  background: var(--color-gold-600);
+  color: var(--color-ivory-50);
 }

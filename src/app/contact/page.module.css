@@ -12,7 +12,7 @@
   font-size: 15px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--color-burgundy-900);
   margin-bottom: 16px;
 }
 
@@ -22,7 +22,7 @@
 
 .hours {
   font-size: 17px;
-  color: var(--muted-brown);
+  color: var(--color-ink-700);
 }
 
 @media (max-width: 768px) {

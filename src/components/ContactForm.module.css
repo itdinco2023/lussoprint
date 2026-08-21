@@ -19,16 +19,16 @@
   font-size: 13px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--burgundy);
+  color: var(--color-burgundy-900);
 }
 
 .field input,
 .field textarea {
   font-family: var(--font-cormorant), serif;
   font-size: 18px;
-  color: var(--ink);
+  color: var(--color-ink-900);
   background: transparent;
-  border: 1px solid var(--gold-pale);
+  border: 1px solid var(--color-gold-300);
   padding: 12px 16px;
   resize: vertical;
 }
@@ -36,15 +36,15 @@
 .field input:focus,
 .field textarea:focus {
   outline: none;
-  border-color: var(--gold);
+  border-color: var(--color-gold-600);
 }
 
 .submit {
   align-self: center;
   margin-top: 8px;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--color-gold-600);
   background: transparent;
-  color: var(--burgundy);
+  color: var(--color-burgundy-900);
   padding: 16px 48px;
   font-family: var(--font-playfair), serif;
   font-size: 15px;
@@ -55,8 +55,8 @@
 }
 
 .submit:hover:not(:disabled) {
-  background: var(--gold);
-  color: var(--burgundy-deep);
+  background: var(--color-gold-600);
+  color: var(--color-ink-900);
 }
 
 .submit:disabled {
@@ -66,7 +66,7 @@
 
 .success {
   text-align: center;
-  color: var(--burgundy);
+  color: var(--color-burgundy-900);
   font-size: 17px;
 }
 
