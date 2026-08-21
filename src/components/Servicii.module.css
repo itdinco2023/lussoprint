@@ -1,0 +1,67 @@
+.section {
+  padding: 100px 8vw;
+}
+
+.kicker {
+  text-align: center;
+  font-family: var(--font-playfair), serif;
+  font-size: 15px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 56px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.numeral {
+  font-family: var(--font-playfair), serif;
+  color: var(--gold);
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.title {
+  font-family: var(--font-playfair), serif;
+  font-size: 21px;
+  color: var(--ink);
+}
+
+.description {
+  font-size: 16px;
+  color: var(--muted-brown);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

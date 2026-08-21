@@ -1,0 +1,13 @@
+.section {
+  padding: 100px 8vw;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  max-width: 660px;
+  text-align: center;
+  font-size: 23px;
+  line-height: 1.6;
+  color: var(--muted-brown-dark);
+}

@@ -1,0 +1,8 @@
+.footer {
+  background: var(--burgundy-deep);
+  color: var(--gold-pale);
+  padding: 28px 8vw;
+  text-align: center;
+  font-size: 14px;
+  font-family: var(--font-cormorant), serif;
+}

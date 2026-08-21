@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 8vw;
+  gap: 24px;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.wordmark {
+  font-family: var(--font-playfair), serif;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.nav {
+  display: flex;
+  gap: 36px;
+  font-size: 17px;
+}
+
+.nav a {
+  color: var(--burgundy);
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--gold);
+}

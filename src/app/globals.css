@@ -1,13 +1,12 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --burgundy: #6b0f1a;
+  --burgundy-deep: #3d0810;
+  --ink: #241b14;
+  --gold: #c6a15b;
+  --gold-pale: #e8d9b0;
+  --cream: #faf6ee;
+  --muted-brown: #6b5c4a;
+  --muted-brown-dark: #3a2c20;
 }
 
 html {
@@ -22,11 +21,9 @@ body {
 
 body {
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: var(--font-cormorant), serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,8 +39,7 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+::selection {
+  background: var(--gold);
+  color: var(--cream);
 }
