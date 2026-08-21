@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import bannerHero from "../../public/images/banner-hero.png";
+import bannerSite from "../../public/images/banner-site.png";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
       <Image
-        src={bannerHero}
+        src={bannerSite}
         alt="Lusso Print"
         fill
         className={styles.image}
