@@ -102,6 +102,10 @@
     font-size: 35px;
   }
 
+  .actions {
+    gap: 10px;
+  }
+
   .nav {
     display: none;
   }

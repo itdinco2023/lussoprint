@@ -1,4 +1,8 @@
+"use client";
+
 import Image, { type StaticImageData } from "next/image";
+import { useLanguage } from "@/lib/language";
+import { translations } from "@/lib/translations";
 import styles from "./Servicii.module.css";
 import publicitateOutdoor from "../../public/images/publicitate-outdoor.png";
 import sistemeDeExpunere from "../../public/images/sisteme-de-expunere.png";
@@ -7,49 +11,28 @@ import eticheteSiStickere from "../../public/images/etichete-si-stickere.png";
 import obiecteSiTextilePersonalizate from "../../public/images/obiecte-si-textile-personalizate.png";
 import printDigital from "../../public/images/print-digital.png";
 
-const servicii: { title: string; description: string; image: StaticImageData }[] = [
-  {
-    title: "Publicitate outdoor",
-    description: "Bannere, colantări pentru vitrine, geamuri și autovehicule profesionale",
-    image: publicitateOutdoor,
-  },
-  {
-    title: "Sisteme de expunere",
-    description: "Steaguri de eveniment, structuri pop-up și roll-up",
-    image: sistemeDeExpunere,
-  },
-  {
-    title: "Casete luminoase",
-    description: "Interior și exterior, în variante textil sau plexi",
-    image: caseteLuminoase,
-  },
-  {
-    title: "Etichete și stickere",
-    description: "Soluții personalizate pentru companii și antreprenori",
-    image: eticheteSiStickere,
-  },
-  {
-    title: "Obiecte și textile personalizate",
-    description: "Tricouri, echipamente de lucru, șepci, pixuri, sacoșe, agende",
-    image: obiecteSiTextilePersonalizate,
-  },
-  {
-    title: "Print digital",
-    description: "Broșuri, flyere, postere și cărți de vizită, calitate constantă indiferent de tiraj",
-    image: printDigital,
-  },
+const images: StaticImageData[] = [
+  publicitateOutdoor,
+  sistemeDeExpunere,
+  caseteLuminoase,
+  eticheteSiStickere,
+  obiecteSiTextilePersonalizate,
+  printDigital,
 ];
 
 export default function Servicii() {
+  const lang = useLanguage();
+  const t = translations[lang].servicii;
+
   return (
     <section id="servicii" className={styles.section}>
-      <div className={styles.kicker}>Servicii</div>
+      <div className={styles.kicker}>{t.kicker}</div>
       <div className={styles.grid}>
-        {servicii.map((item) => (
+        {t.items.map((item, index) => (
           <div className={styles.card} key={item.title}>
             <div className={styles.imageWrap}>
               <Image
-                src={item.image}
+                src={images[index]}
                 alt={item.title}
                 fill
                 className={styles.image}

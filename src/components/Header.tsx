@@ -6,10 +6,15 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import logoCrest from "../../public/images/logo-crest.png";
 import { siteLinks as links } from "@/lib/nav";
+import { useLanguage } from "@/lib/language";
+import { translations } from "@/lib/translations";
 import ThemeToggle from "./ThemeToggle";
+import LanguageToggle from "./LanguageToggle";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const lang = useLanguage();
+  const nav = translations[lang].nav;
 
   return (
     <header className={styles.header}>
@@ -21,12 +26,13 @@ export default function Header() {
       <div className={styles.actions}>
         <nav className={styles.nav}>
           {links.map((link) => (
-            <Link key={link.label} href={link.href}>
-              {link.label}
+            <Link key={link.key} href={link.href}>
+              {nav[link.key]}
             </Link>
           ))}
         </nav>
 
+        <LanguageToggle />
         <ThemeToggle />
 
         <button
@@ -48,8 +54,8 @@ export default function Header() {
         className={`${styles.mobileNav} ${open ? styles.mobileNavOpen : ""}`}
       >
         {links.map((link) => (
-          <Link key={link.label} href={link.href} onClick={() => setOpen(false)}>
-            {link.label}
+          <Link key={link.key} href={link.href} onClick={() => setOpen(false)}>
+            {nav[link.key]}
           </Link>
         ))}
       </nav>

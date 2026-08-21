@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css";
@@ -5,9 +7,15 @@ import logoCrest from "../../public/images/logo-crest.png";
 import anpcSal from "../../public/images/anpc-sal.png";
 import anpcSol from "../../public/images/anpc-sol.png";
 import { siteLinks, legalLinks } from "@/lib/nav";
+import { useLanguage } from "@/lib/language";
+import { translations } from "@/lib/translations";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const lang = useLanguage();
+  const nav = translations[lang].nav;
+  const legal = translations[lang].legal;
+  const t = translations[lang].footer;
 
   return (
     <footer className={styles.footer}>
@@ -33,29 +41,29 @@ export default function Footer() {
         </div>
 
         <div className={styles.column}>
-          <div className={styles.heading}>Meniu</div>
+          <div className={styles.heading}>{t.menuHeading}</div>
           <nav className={styles.linkList}>
             {siteLinks.map((link) => (
               <Link key={link.href} href={link.href}>
-                {link.label}
+                {nav[link.key]}
               </Link>
             ))}
           </nav>
         </div>
 
         <div className={styles.column}>
-          <div className={styles.heading}>Legal</div>
+          <div className={styles.heading}>{t.legalHeading}</div>
           <nav className={styles.linkList}>
             {legalLinks.map((link) => (
               <Link key={link.href} href={link.href}>
-                {link.label}
+                {legal[link.key]}
               </Link>
             ))}
           </nav>
         </div>
 
         <div className={styles.column}>
-          <div className={styles.heading}>ANPC</div>
+          <div className={styles.heading}>{t.anpcHeading}</div>
           <div className={styles.anpcBadges}>
             <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer">
               <Image
@@ -80,7 +88,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottomBar}>
-        © {year} SC Lusso Print SRL. Toate drepturile rezervate. · Dezvoltat de{" "}
+        © {year} SC Lusso Print SRL. {t.rights} · {t.developedBy}{" "}
         <a href="https://netzone.ro" target="_blank" rel="noopener noreferrer">
           Netzone
         </a>

@@ -1,0 +1,22 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--border);
+  background: transparent;
+  font-family: var(--font-cinzel), serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  z-index: 2;
+}
+
+.toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

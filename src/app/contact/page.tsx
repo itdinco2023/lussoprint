@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import ContactInfo from "@/components/ContactInfo";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -10,10 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className={styles.section}>
-      <div className={styles.kicker}>Contact</div>
-      <div className={styles.line}>office@lussoprint.com</div>
-      <div className={styles.line}>0743.201.030</div>
-      <div className={styles.hours}>Luni – Vineri, 08:00–17:00</div>
+      <ContactInfo />
       <ContactForm />
     </section>
   );

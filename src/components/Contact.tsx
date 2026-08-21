@@ -1,14 +1,19 @@
+"use client";
+
+import { useLanguage } from "@/lib/language";
+import { translations } from "@/lib/translations";
+import ContactInfo from "./ContactInfo";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
+  const lang = useLanguage();
+  const t = translations[lang].contact;
+
   return (
     <section id="contact" className={styles.section}>
-      <div className={styles.kicker}>Contact</div>
-      <div className={styles.line}>office@lussoprint.com</div>
-      <div className={styles.line}>0743.201.030</div>
-      <div className={styles.hours}>Luni – Vineri, 08:00–17:00</div>
+      <ContactInfo />
       <a href="mailto:office@lussoprint.com" className={styles.button}>
-        Trimite un mesaj
+        {t.cta}
       </a>
     </section>
   );

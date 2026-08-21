@@ -1,12 +1,12 @@
 export const siteLinks = [
-  { href: "/", label: "Prima pagină" },
-  { href: "/despre", label: "Despre noi" },
-  { href: "/servicii", label: "Servicii" },
-  { href: "/contact", label: "Contact" },
+  { href: "/", key: "home" as const },
+  { href: "/despre", key: "about" as const },
+  { href: "/servicii", key: "services" as const },
+  { href: "/contact", key: "contact" as const },
 ];
 
 export const legalLinks = [
-  { href: "/gdpr", label: "GDPR" },
-  { href: "/cookie-uri", label: "Politica de cookie-uri" },
-  { href: "/termeni-si-conditii", label: "Termeni și condiții" },
+  { href: "/gdpr", key: "gdpr" as const },
+  { href: "/cookie-uri", key: "cookies" as const },
+  { href: "/termeni-si-conditii", key: "terms" as const },
 ];

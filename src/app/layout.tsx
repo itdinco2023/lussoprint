@@ -56,6 +56,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             })();
           `}
         </Script>
+        <Script id="lang-init" strategy="beforeInteractive">
+          {`
+            (function () {
+              var saved = localStorage.getItem('lang');
+              var lang = saved === 'en' ? 'en' : 'ro';
+              document.documentElement.setAttribute('data-lang', lang);
+            })();
+          `}
+        </Script>
         <Header />
         {children}
         <Footer />
