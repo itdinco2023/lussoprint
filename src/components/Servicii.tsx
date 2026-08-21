@@ -1,42 +1,42 @@
 import Image, { type StaticImageData } from "next/image";
 import styles from "./Servicii.module.css";
-import printDigital from "../../public/images/service-print-digital.png";
-import printOffset from "../../public/images/service-print-offset.png";
-import materialePublicitare from "../../public/images/service-materiale-publicitare.png";
-import cartiVizita from "../../public/images/service-carti-vizita-papetarie.png";
-import ambalaje from "../../public/images/service-ambalaje-personalizate.png";
-import printTextile from "../../public/images/service-print-textile.png";
+import publicitateOutdoor from "../../public/images/publicitate-outdoor.png";
+import sistemeDeExpunere from "../../public/images/sisteme-de-expunere.png";
+import caseteLuminoase from "../../public/images/casete-luminoase.png";
+import eticheteSiStickere from "../../public/images/etichete-si-stickere.png";
+import obiecteSiTextilePersonalizate from "../../public/images/obiecte-si-textile-personalizate.png";
+import printDigital from "../../public/images/print-digital.png";
 
 const servicii: { title: string; description: string; image: StaticImageData }[] = [
   {
     title: "Publicitate outdoor",
     description: "Bannere, colantări pentru vitrine, geamuri și autovehicule profesionale",
-    image: printDigital,
+    image: publicitateOutdoor,
   },
   {
     title: "Sisteme de expunere",
     description: "Steaguri de eveniment, structuri pop-up și roll-up",
-    image: printOffset,
+    image: sistemeDeExpunere,
   },
   {
     title: "Casete luminoase",
     description: "Interior și exterior, în variante textil sau plexi",
-    image: materialePublicitare,
+    image: caseteLuminoase,
   },
   {
     title: "Etichete și stickere",
     description: "Soluții personalizate pentru companii și antreprenori",
-    image: cartiVizita,
+    image: eticheteSiStickere,
   },
   {
     title: "Obiecte și textile personalizate",
     description: "Tricouri, echipamente de lucru, șepci, pixuri, sacoșe, agende",
-    image: ambalaje,
+    image: obiecteSiTextilePersonalizate,
   },
   {
     title: "Print digital",
     description: "Broșuri, flyere, postere și cărți de vizită, calitate constantă indiferent de tiraj",
-    image: printTextile,
+    image: printDigital,
   },
 ];
 
