@@ -5,6 +5,7 @@ export const translations = {
     nav: {
       home: "Prima pagină",
       about: "Despre noi",
+      howWeWork: "Cum lucrăm",
       services: "Servicii",
       contact: "Contact",
     },
@@ -25,6 +26,37 @@ export const translations = {
         "Completăm oferta prin obiecte și textile personalizate — tricouri, echipamente de lucru, șepci, pixuri, sacoșe și agende — concepute pentru a susține consecvent identitatea de brand, în orice context de utilizare.",
         "În zona de print digital, urmărim un standard constant de calitate, indiferent de tiraj: broșuri, flyere, postere și cărți de vizită executate la un nivel care reflectă cu exactitate viziunea inițială a fiecărui client.",
         "Investim continuu în echipamente moderne și finisaje de precizie, pentru ca rezultatul final să corespundă întotdeauna așteptărilor stabilite încă din etapa de concept.",
+      ],
+    },
+    cumLucram: {
+      title: "Cum lucrăm",
+      stepsKicker: "Foarte simplu",
+      steps: [
+        {
+          number: "01",
+          title: "Ne spui ce ai nevoie",
+          description: "Ne trimiți dimensiunile, cantitatea și materialele dorite.",
+        },
+        {
+          number: "02",
+          title: "Pregătim oferta",
+          description: "Îți recomandăm soluția potrivită și îți trimitem oferta.",
+        },
+        {
+          number: "03",
+          title: "Pregătim grafica",
+          description: "Verificăm fișierele și le pregătim pentru producție.",
+        },
+        {
+          number: "04",
+          title: "Producem",
+          description: "Realizăm materialele cu echipamente profesionale.",
+        },
+        {
+          number: "05",
+          title: "Livrăm / Ridici",
+          description: "Primești produsele gata de utilizare.",
+        },
       ],
       whyTitle: "De ce Lusso Print?",
       whyItems: [
@@ -137,6 +169,7 @@ export const translations = {
     nav: {
       home: "Home",
       about: "About",
+      howWeWork: "How We Work",
       services: "Services",
       contact: "Contact",
     },
@@ -157,6 +190,37 @@ export const translations = {
         "We round out our offer with custom merchandise and apparel — t-shirts, workwear, caps, pens, bags, and notebooks — designed to consistently support your brand identity in any context.",
         "In digital printing, we maintain a consistent quality standard regardless of print run: brochures, flyers, posters, and business cards executed to a level that accurately reflects each client's original vision.",
         "We continuously invest in modern equipment and precision finishing, so the final result always matches the expectations set from the concept stage.",
+      ],
+    },
+    cumLucram: {
+      title: "How We Work",
+      stepsKicker: "It's simple",
+      steps: [
+        {
+          number: "01",
+          title: "You tell us what you need",
+          description: "Send us the size, quantity, and materials you want.",
+        },
+        {
+          number: "02",
+          title: "We prepare the quote",
+          description: "We recommend the right solution and send you a quote.",
+        },
+        {
+          number: "03",
+          title: "We prepare the artwork",
+          description: "We check the files and prepare them for production.",
+        },
+        {
+          number: "04",
+          title: "We produce",
+          description: "We create the materials using professional equipment.",
+        },
+        {
+          number: "05",
+          title: "Delivery / Pickup",
+          description: "You receive the products ready to use.",
+        },
       ],
       whyTitle: "Why Lusso Print?",
       whyItems: [

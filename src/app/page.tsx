@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Despre from "@/components/Despre";
+import CumLucram from "@/components/CumLucram";
 import Servicii from "@/components/Servicii";
 import Contact from "@/components/Contact";
 import Divider from "@/components/Divider";
@@ -10,6 +11,8 @@ export default function Home() {
       <Hero />
       <Divider />
       <Despre />
+      <Divider />
+      <CumLucram />
       <Divider />
       <Servicii />
       <Contact />
