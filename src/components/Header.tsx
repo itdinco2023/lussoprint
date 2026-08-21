@@ -5,13 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import logoCrest from "../../public/images/logo-crest.png";
-
-const links = [
-  { href: "/", label: "Prima pagină" },
-  { href: "/despre", label: "Despre noi" },
-  { href: "/servicii", label: "Servicii" },
-  { href: "/contact", label: "Contact" },
-];
+import { siteLinks as links } from "@/lib/nav";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
