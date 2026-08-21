@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 import logoCrest from "../../public/images/logo-crest.png";
+import anpcSal from "../../public/images/anpc-sal.png";
+import anpcSol from "../../public/images/anpc-sol.png";
 import { siteLinks, legalLinks } from "@/lib/nav";
 
 export default function Footer() {
@@ -50,6 +52,30 @@ export default function Footer() {
               </Link>
             ))}
           </nav>
+        </div>
+
+        <div className={styles.column}>
+          <div className={styles.heading}>ANPC</div>
+          <div className={styles.anpcBadges}>
+            <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src={anpcSal}
+                alt="ANPC - Soluționarea Alternativă a Litigiilor"
+                className={styles.anpcBadge}
+              />
+            </a>
+            <a
+              href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={anpcSol}
+                alt="Soluționarea Online a Litigiilor"
+                className={styles.anpcBadge}
+              />
+            </a>
+          </div>
         </div>
       </div>
 

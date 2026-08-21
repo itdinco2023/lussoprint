@@ -6,7 +6,7 @@
 
 .columns {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
   gap: 48px;
   max-width: 1200px;
   margin: 0 auto;
@@ -83,6 +83,23 @@
   color: var(--gold);
 }
 
+.anpcBadges {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.anpcBadge {
+  height: auto;
+  max-width: 160px;
+  opacity: 0.92;
+  transition: opacity 0.2s ease;
+}
+
+.anpcBadge:hover {
+  opacity: 1;
+}
+
 .bottomBar {
   border-top: 1px solid rgba(232, 217, 176, 0.2);
   padding: 20px 8vw;
@@ -101,14 +118,15 @@
   color: var(--cream);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .columns {
     grid-template-columns: 1fr 1fr;
     gap: 40px 32px;
     padding: 48px 7vw 40px;
   }
 
-  .column:first-child {
+  .column:first-child,
+  .column:last-child {
     grid-column: 1 / -1;
   }
 }
@@ -120,7 +138,8 @@
     padding: 40px 7vw 32px;
   }
 
-  .column:first-child {
+  .column:first-child,
+  .column:last-child {
     grid-column: auto;
   }
 
