@@ -8,6 +8,7 @@ export default function Hero() {
       <Image
         src={bannerHero}
         alt="Lusso Print"
+        fill
         className={styles.image}
         priority
         sizes="100vw"

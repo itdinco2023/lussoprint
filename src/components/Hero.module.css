@@ -1,12 +1,12 @@
 .hero {
   position: relative;
   width: 100%;
+  overflow: hidden;
+  aspect-ratio: 1672 / 941;
 }
 
 .image {
-  width: 100%;
-  height: auto;
-  display: block;
+  object-fit: cover;
 }
 
 .overlay {
@@ -109,14 +109,27 @@
   color: var(--gold);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .hero {
+    aspect-ratio: 4 / 5;
+  }
+
+  .content {
+    gap: 20px;
+  }
+
   .plate {
     padding: 32px 28px;
     gap: 16px;
+    max-width: 90%;
   }
 
   .rule {
     height: 24px;
+  }
+
+  .tagline {
+    font-size: clamp(22px, 5.6vw, 32px);
   }
 
   .buttons {
@@ -132,12 +145,23 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    aspect-ratio: 3 / 4;
+  }
+
   .content {
-    gap: 20px;
+    gap: 16px;
+    padding: 0 6vw;
   }
 
   .plate {
-    padding: 26px 18px;
+    padding: 24px 18px;
+    gap: 14px;
+  }
+
+  .tagline {
+    font-size: clamp(19px, 6vw, 26px);
+    letter-spacing: 0.02em;
   }
 
   .buttons {
@@ -148,5 +172,12 @@
   .buttonSolid,
   .buttonOutline {
     text-align: center;
+    padding: 14px 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    aspect-ratio: 3 / 4.4;
   }
 }
