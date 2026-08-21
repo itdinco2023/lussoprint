@@ -5,21 +5,38 @@ export default function Despre() {
     <section id="despre" className={styles.section}>
       <div className={styles.text}>
         <p>
-          Lusso Print este atelierul de print și materiale publicitare din
-          Slobozia, Ialomița, unde fiecare proiect pornește de la o singură
-          prioritate: calitatea. Lucrăm cu hârtii premium, textile și
-          suporturi rezistente pentru print digital, print offset, cărți de
-          vizită, ambalaje personalizate și materiale publicitare — de la
-          roll-up-uri și bannere, la papetărie corporate și print pe
-          textile.
+          Lusso Print este un atelier de producție publicitară dedicat
+          companiilor, agențiilor și antreprenorilor care au nevoie ca
+          fiecare material să reprezinte fidel identitatea brandului lor,
+          indiferent de complexitatea proiectului sau dimensiunea tirajului.
         </p>
         <p>
-          Colaborăm cu companii, agenții și antreprenori din toată țara care
-          își doresc ca fiecare material tipărit să reflecte fidel
-          identitatea brandului lor, indiferent de tiraj. Investim în
-          echipamente moderne și finisaje atente la detaliu, astfel încât
-          rezultatul final să arate exact așa cum a fost gândit — de la
-          prima schiță până la produsul finit.
+          Portofoliul nostru acoperă întreaga sferă a comunicării vizuale: de
+          la publicitate outdoor și indoor — bannere, colantări personalizate
+          pentru vitrine, geamuri și autovehicule profesionale — până la
+          sisteme de expunere pentru evenimente și spații comerciale, precum
+          steaguri de eveniment, structuri pop-up și roll-up. Realizăm, de
+          asemenea, casete luminoase de interior și exterior, în variante
+          textil sau plexi, alături de etichete și stickere personalizate,
+          adaptate atât nevoilor unor companii de amploare, cât și celor ale
+          antreprenorilor locali.
+        </p>
+        <p>
+          Completăm oferta prin obiecte și textile personalizate — tricouri,
+          echipamente de lucru, șepci, pixuri, sacoșe și agende — concepute
+          pentru a susține consecvent identitatea de brand, în orice context
+          de utilizare.
+        </p>
+        <p>
+          În zona de print digital, urmărim un standard constant de
+          calitate, indiferent de tiraj: broșuri, flyere, postere și cărți de
+          vizită executate la un nivel care reflectă cu exactitate viziunea
+          inițială a fiecărui client.
+        </p>
+        <p>
+          Investim continuu în echipamente moderne și finisaje de precizie,
+          pentru ca rezultatul final să corespundă întotdeauna așteptărilor
+          stabilite încă din etapa de concept.
         </p>
       </div>
     </section>
